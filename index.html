@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Adaptacije stanova Zagreb – Goran Ključarić | Odaberi verziju</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif; background: #f8fafc; color: #1e293b; min-height: 100vh; display: flex; align-items: center; justify-content: center; padding: 40px 5%; }
+    .wrap { max-width: 900px; width: 100%; text-align: center; }
+    .eyebrow { font-size: 0.75rem; font-weight: 700; letter-spacing: 2.5px; text-transform: uppercase; color: #f59e0b; margin-bottom: 16px; }
+    h1 { font-size: clamp(1.8rem, 4vw, 2.8rem); font-weight: 900; letter-spacing: -1px; margin-bottom: 14px; line-height: 1.15; color: #1e293b; }
+    h1 span { color: #f59e0b; }
+    .sub { font-size: 1rem; color: #64748b; margin-bottom: 60px; line-height: 1.75; }
+    .cards { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
+    .card { background: #ffffff; border: 1.5px solid #e2e8f0; border-radius: 16px; padding: 40px 32px; text-align: left; transition: border-color .2s, transform .2s, box-shadow .2s; text-decoration: none; display: flex; flex-direction: column; box-shadow: 0 2px 12px rgba(0,0,0,.06); }
+    .card:hover { border-color: #f59e0b; transform: translateY(-4px); box-shadow: 0 8px 32px rgba(0,0,0,.1); }
+    .card__badge { display: inline-block; font-size: 0.7rem; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; padding: 4px 12px; border-radius: 100px; margin-bottom: 20px; }
+    .card--v1 .card__badge { background: #eff6ff; color: #2563eb; }
+    .card--v2 .card__badge { background: #fffbeb; color: #d97706; }
+    .card__title { font-size: 1.3rem; font-weight: 800; color: #1e293b; margin-bottom: 10px; letter-spacing: -0.3px; }
+    .card__desc { font-size: 0.92rem; color: #64748b; line-height: 1.7; margin-bottom: 28px; flex: 1; }
+    .card__features { list-style: none; margin-bottom: 32px; display: flex; flex-direction: column; gap: 8px; }
+    .card__features li { font-size: 0.85rem; color: #64748b; display: flex; align-items: center; gap: 8px; }
+    .card__features li::before { content: '✓'; color: #f59e0b; font-weight: 800; flex-shrink: 0; }
+    .card__btn { display: inline-flex; align-items: center; justify-content: center; padding: 12px 24px; border-radius: 8px; font-size: 0.95rem; font-weight: 700; transition: background .2s; }
+    .card--v1 .card__btn { background: #1e3c5f; color: #fff; }
+    .card--v1:hover .card__btn { background: #4a90d9; }
+    .card--v2 .card__btn { background: #f59e0b; color: #1e293b; }
+    .card--v2:hover .card__btn { background: #d97706; }
+    .footer-note { margin-top: 48px; font-size: 0.82rem; color: #94a3b8; }
+    @media (max-width: 600px) { .cards { grid-template-columns: 1fr; } }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="eyebrow">Adaptacije stanova · Zagreb</div>
+    <h1>Goran Ključarić · <span>KLJUČ adaptacije</span></h1>
+    <p class="sub">Odaberi verziju one-pagera za pregled. Nakon odabira, jedna verzija postaje glavna stranica.</p>
+
+    <div class="cards">
+      <a href="version1/" target="_blank" rel="noopener" class="card card--v1">
+        <span class="card__badge">Verzija 1</span>
+        <div class="card__title">Čisti profesionalni stil</div>
+        <p class="card__desc">Tamnoplavi dizajn, moderne kartice i pregledan tablični cjenik. Klasična struktura: navigacija, hero, usluge, cjenik, reference, recenzije, česta pitanja i kontakt.</p>
+        <ul class="card__features">
+          <li>Tamnoplavi i svijetloplavi dizajn</li>
+          <li>Tablični prikaz cjenika</li>
+          <li>Sekcija referenci s fotografijama</li>
+          <li>Sekcija čestih pitanja (FAQ)</li>
+        </ul>
+        <span class="card__btn">Pogledaj Verziju 1 →</span>
+      </a>
+
+      <a href="version2/" target="_blank" rel="noopener" class="card card--v2">
+        <span class="card__badge">Verzija 2</span>
+        <div class="card__title">Amber i svijetli majstorski stil</div>
+        <p class="card__desc">Svijetla pozadina, topli amber naglasci, uvodna slika i interaktivni kalkulator troškova. Vizualno bogat i dinamičan dojam s fotografijama referenci.</p>
+        <ul class="card__features">
+          <li>Svijetla pozadina s amber naglascima</li>
+          <li>Uvodna slika + fotografija majstora</li>
+          <li>Interaktivni kalkulator troškova</li>
+          <li>Sekcija referenci s fotografijama</li>
+        </ul>
+        <span class="card__btn">Pogledaj Verziju 2 →</span>
+      </a>
+    </div>
+
+    <p class="footer-note">Goran Ključarić · KLJUČ adaptacije · Zagreb · +385 99 528 3280</p>
+  </div>
+</body>
+</html>
