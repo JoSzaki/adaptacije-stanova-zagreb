@@ -15,7 +15,7 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;0,800;0,900;1,500;1,600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,500&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
 
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -43,10 +43,10 @@
     .nav { position: sticky; top: 0; z-index: 1000; background: rgba(247,243,236,.92); backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px); border-bottom: 1px solid var(--line); }
     .nav__inner { max-width: 1120px; margin: 0 auto; padding: 16px 6%; display: flex; align-items: center; justify-content: space-between; gap: 20px; }
     .brand { line-height: 1.1; }
-    .brand__name { font-family: var(--serif); font-weight: 800; font-size: 1.45rem; color: var(--ink); letter-spacing: .2px; }
+    .brand__name { font-family: var(--serif); font-weight: 700; font-size: 1.45rem; color: var(--ink); letter-spacing: .2px; }
     .brand__sub { font-family: var(--sans); font-weight: 600; font-size: 0.66rem; letter-spacing: 2px; text-transform: uppercase; color: var(--muted); margin-top: 3px; }
     .nav__links { display: flex; align-items: center; gap: 28px; list-style: none; }
-    .nav__links a { font-size: 0.95rem; font-weight: 500; color: var(--ink); transition: color .2s; }
+    .nav__links a { font-size: 0.95rem; font-weight: 600; color: var(--ink); transition: color .2s; }
     .nav__links a:hover { color: var(--terra); }
     .nav__phone { font-weight: 600 !important; color: var(--terra) !important; border: 1.5px solid var(--terra); border-radius: 6px; padding: 9px 16px; transition: background .2s, color .2s !important; white-space: nowrap; }
     .nav__phone:hover { background: var(--terra); color: var(--white) !important; }
@@ -67,7 +67,7 @@
     /* HERO */
     .hero { padding: 88px 0 80px; }
     .hero__pill { margin-bottom: 30px; }
-    .hero__h1 { font-family: var(--serif); font-weight: 800; color: var(--ink); font-size: clamp(2.6rem, 6.5vw, 5rem); line-height: 1.04; letter-spacing: -1.5px; margin-bottom: 28px; max-width: 16ch; }
+    .hero__h1 { font-family: var(--serif); font-weight: 700; color: var(--ink); font-size: clamp(2.6rem, 6.5vw, 5rem); line-height: 1.04; letter-spacing: -1.5px; margin-bottom: 28px; max-width: 16ch; }
     .hero__lead { font-family: var(--serif); font-style: italic; font-weight: 500; color: var(--muted); font-size: clamp(1.25rem, 2.4vw, 1.6rem); line-height: 1.45; margin-bottom: 28px; max-width: 30ch; }
     .hero__body { font-size: 1.08rem; color: var(--body-c); line-height: 1.75; max-width: 54ch; margin-bottom: 38px; }
     .hero__ctas { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; }
@@ -84,7 +84,7 @@
     section { padding: 92px 0; }
     .sec-head { max-width: 680px; margin-bottom: 52px; }
     .sec-eyebrow { display: block; font-weight: 700; font-size: 0.76rem; letter-spacing: 2.5px; text-transform: uppercase; color: var(--terra); margin-bottom: 16px; }
-    .sec-h2 { font-family: var(--serif); font-weight: 800; color: var(--ink); font-size: clamp(2rem, 3.8vw, 3rem); line-height: 1.1; letter-spacing: -0.8px; margin-bottom: 18px; }
+    .sec-h2 { font-family: var(--serif); font-weight: 700; color: var(--ink); font-size: clamp(2rem, 3.8vw, 3rem); line-height: 1.1; letter-spacing: -0.8px; margin-bottom: 18px; }
     .sec-sub { font-size: 1.06rem; color: var(--muted); line-height: 1.7; }
 
     /* SERVICES */
@@ -92,7 +92,7 @@
     .svc-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1px; background: var(--line); border: 1px solid var(--line); }
     .svc { background: var(--cream-2); padding: 34px 30px 38px; transition: background .2s; }
     .svc:hover { background: var(--white); }
-    .svc__idx { font-family: var(--serif); font-style: italic; font-weight: 600; font-size: 1.05rem; color: var(--terra); margin-bottom: 14px; }
+    .svc__idx { font-family: var(--serif); font-style: italic; font-weight: 500; font-size: 1.05rem; color: var(--terra); margin-bottom: 14px; }
     .svc__title { font-family: var(--serif); font-weight: 700; font-size: 1.3rem; color: var(--ink); margin-bottom: 10px; letter-spacing: -0.3px; }
     .svc__text { font-size: 0.95rem; color: var(--body-c); line-height: 1.65; }
     .svc__price { display: inline-block; margin-top: 16px; font-weight: 600; font-size: 0.85rem; color: var(--terra-dark); }
@@ -120,7 +120,7 @@
     .calc-field select:focus, .calc-field input:focus { outline: none; border-color: var(--terra); }
     .calc-result { display: flex; align-items: baseline; justify-content: space-between; gap: 16px; flex-wrap: wrap; padding: 22px 24px; background: var(--white); border: 1px solid var(--terra); border-radius: 8px; }
     .calc-result__label { font-size: 0.92rem; color: var(--muted); }
-    .calc-result__value { font-family: var(--serif); font-weight: 800; font-size: 2.4rem; color: var(--terra-dark); letter-spacing: -1px; }
+    .calc-result__value { font-family: var(--serif); font-weight: 700; font-size: 2.4rem; color: var(--terra-dark); letter-spacing: -1px; }
     .calc-disclaimer { margin-top: 16px; font-size: 0.84rem; color: var(--muted); line-height: 1.55; }
     .calc-disclaimer a { color: var(--terra-dark); font-weight: 600; }
 
@@ -152,7 +152,7 @@
     .reviews { background: var(--cream); }
     .rev-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 28px; }
     .rev { background: var(--cream-2); border: 1px solid var(--line); border-radius: 8px; padding: 30px 28px; }
-    .rev__mark { font-family: var(--serif); font-size: 3rem; line-height: 0.6; color: var(--terra); opacity: .55; }
+    .rev__mark { font-family: var(--serif); font-weight: 700; font-size: 3rem; line-height: 0.6; color: var(--terra); opacity: .55; }
     .rev__text { font-family: var(--serif); font-style: italic; font-weight: 500; font-size: 1.05rem; color: var(--ink); line-height: 1.55; margin: 10px 0 20px; }
     .rev__author { font-weight: 700; font-size: 0.92rem; color: var(--ink); }
     .rev__meta { font-size: 0.8rem; letter-spacing: 1px; text-transform: uppercase; color: var(--muted); margin-top: 3px; }
@@ -160,13 +160,13 @@
     /* CTA */
     .cta { background: var(--cream-2); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); text-align: center; }
     .cta__pill { margin-bottom: 26px; }
-    .cta__h2 { font-family: var(--serif); font-weight: 800; color: var(--ink); font-size: clamp(2rem, 4.5vw, 3.2rem); line-height: 1.1; letter-spacing: -1px; margin-bottom: 18px; max-width: 18ch; margin-left: auto; margin-right: auto; }
+    .cta__h2 { font-family: var(--serif); font-weight: 700; color: var(--ink); font-size: clamp(2rem, 4.5vw, 3.2rem); line-height: 1.1; letter-spacing: -1px; margin-bottom: 18px; max-width: 18ch; margin-left: auto; margin-right: auto; }
     .cta__sub { font-size: 1.06rem; color: var(--muted); line-height: 1.7; max-width: 50ch; margin: 0 auto 36px; }
 
     /* FOOTER */
     .footer { background: var(--ink); padding: 64px 0 40px; }
     .footer__top { display: grid; grid-template-columns: 1fr 1fr; gap: 50px; padding-bottom: 44px; border-bottom: 1px solid rgba(255,255,255,.12); margin-bottom: 34px; }
-    .footer__name { font-family: var(--serif); font-weight: 800; font-size: 1.5rem; color: var(--white); margin-bottom: 6px; }
+    .footer__name { font-family: var(--serif); font-weight: 700; font-size: 1.5rem; color: var(--white); margin-bottom: 6px; }
     .footer__sub { font-size: 0.7rem; letter-spacing: 2px; text-transform: uppercase; color: rgba(255,255,255,.5); margin-bottom: 18px; }
     .footer__desc { font-size: 0.94rem; color: rgba(255,255,255,.6); line-height: 1.75; max-width: 380px; }
     .footer__col-title { font-size: 0.72rem; font-weight: 700; letter-spacing: 1.8px; text-transform: uppercase; color: rgba(255,255,255,.4); margin-bottom: 16px; }
