@@ -1,0 +1,12 @@
+{
+  "name": "KLJUČ adaptacije – Goran Ključarić",
+  "short_name": "KLJUČ adaptacije",
+  "description": "Adaptacije stanova Zagreb – bojanje, gletanje, Knauf, keramika",
+  "start_url": "/",
+  "display": "browser",
+  "background_color": "#eef7f0",
+  "theme_color": "#15803d",
+  "icons": [
+    { "src": "/favicon.svg", "sizes": "any", "type": "image/svg+xml" }
+  ]
+}
