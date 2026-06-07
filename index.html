@@ -651,13 +651,13 @@
     <input type="hidden" name="_captcha" value="false" />
     <input type="hidden" name="_template" value="table" />
     <input type="hidden" name="_next" value="https://www.adaptacije-stanova-zagreb.com/?poslan=1" />
-    <input type="hidden" name="stranica" id="stranica" value="" />
+    <input type="hidden" name="Izvor stranice" id="stranica" value="" />
     <div class="contact-form__row">
-      <label>Ime i prezime<input type="text" name="ime" placeholder="Ime Prezime" required /></label>
-      <label>Telefon<input type="tel" name="telefon" placeholder="+385 9x xxx xxxx" /></label>
+      <label>Ime i prezime<input type="text" name="Ime i prezime" placeholder="Ime Prezime" required /></label>
+      <label>Telefon<input type="tel" name="Telefon" placeholder="+385 9x xxx xxxx" /></label>
     </div>
     <label>Email<input type="email" name="email" placeholder="vas@email.com" required /></label>
-    <label>Poruka<textarea name="poruka" placeholder="Opisite sto trebate..." required></textarea></label>
+    <label>Poruka<textarea name="Poruka" placeholder="Opisite sto trebate..." required></textarea></label>
     <button type="submit" class="contact-form__submit">Posalji upit</button>
   </form>
 </section>
@@ -682,7 +682,7 @@
 
 <script>
 (function(){
-  document.getElementById('stranica').value = window.location.href;
+  document.querySelector('[name="Izvor stranice"]').value = window.location.href;
   var t=document.getElementById('nav-toggle');
   if(t){
     document.addEventListener('click',function(e){
