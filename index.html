@@ -316,6 +316,13 @@
     .footer__address a:hover { color: var(--a); }
 
     /* RESPONSIVE */
+    .footer__privacy { border-top: 1px solid rgba(255,255,255,.08); padding: 20px 5%; }
+    .footer__privacy p { max-width: 900px; margin: 0 auto; font-size: 0.78rem; color: rgba(255,255,255,.4); line-height: 1.75; }
+    .footer__privacy strong { color: rgba(255,255,255,.55); }
+    .contact-form__privacy { display: flex; align-items: flex-start; gap: 10px; font-size: 0.85rem; cursor: pointer; }
+    .contact-form__privacy input[type="checkbox"] { width: 17px; height: 17px; flex-shrink: 0; margin-top: 2px; accent-color: var(--a); cursor: pointer; }
+    .contact-form__privacy a { color: var(--a); text-decoration: underline; }
+    .contact-form__privacy span { color: rgba(255,255,255,.65); }
     @media (max-width: 920px) {
       .features__grid { grid-template-columns: repeat(2, 1fr); }
       .reviews__grid { grid-template-columns: repeat(2, 1fr); }
@@ -718,7 +725,16 @@
     </div>
     <label>Email<input type="email" name="email" placeholder="vas@email.com" required /></label>
     <label>Poruka<textarea name="Poruka" placeholder="Opisite sto trebate..." required></textarea></label>
+    <label class="contact-form__privacy">
+      <input type="checkbox" name="Suglasnost za obradu podataka" value="Da" required />
+      <span>Prihvaćam <a href="#privacy">obradu osobnih podataka</a> u svrhu kontaktiranja.</span>
+    </label>
     <button type="submit" class="contact-form__submit">Posalji upit</button>
+  <div id="form-success" style="display:none;text-align:center;padding:48px 20px;">
+    <div style="font-size:3rem;color:var(--a);margin-bottom:16px">✓</div>
+    <h3 style="color:var(--white);font-size:1.4rem;margin-bottom:12px;font-weight:800">Hvala vam!</h3>
+    <p style="color:rgba(255,255,255,.7);font-size:1.05rem;line-height:1.7">Vaš upit je primljen.<br>Javit ćemo vam se u roku 24 sata.</p>
+  </div>
   </form>
 </section>
 
@@ -738,10 +754,22 @@
       <p class="footer__address">Zagreb i okolica &nbsp;|&nbsp; <a href="tel:+385995283280">+385 99 528 3280</a></p>
     </div>
   </div>
+  <div class="footer__privacy" id="privacy">
+    <p><strong>Zaštita osobnih podataka:</strong> Vaše osobne podatke (ime, telefon, email adresa) prikupljamo isključivo u svrhu kontaktiranja od strane majstora radi dogovora posla. Podaci se ne dijele s trećim stranama niti se koriste u druge svrhe.</p>
+  </div>
 </footer>
 
 <script>
 (function(){
+    (function(){
+    if(window.location.search.indexOf('poslan=1')>-1){
+      var f=document.querySelector('.contact-form');
+      var s=document.getElementById('form-success');
+      if(f&&s){f.style.display='none';s.style.display='block';}
+      var sec=document.getElementById('upit');
+      if(sec)window.scrollTo({top:sec.offsetTop-80,behavior:'smooth'});
+    }
+  })();
   document.querySelector('[name="Izvor stranice"]').value = window.location.href;
   var t=document.getElementById('nav-toggle');
   if(t){
